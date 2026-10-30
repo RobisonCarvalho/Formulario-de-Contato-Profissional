@@ -1,2 +1,8 @@
+# Credenciais e configurações privadas
 /config/mail.php
+
+# Dependências instaladas pelo Composer
 /vendor/
+
+# Ficheiros temporários
+*.log
