@@ -1,0 +1,171 @@
+
+/* ==========================
+   1. CONFIGURAÇÕES GERAIS
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f0;
+    color: #271d13;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+}
+
+
+/* ==========================
+   2. CONTAINER
+========================== */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* ==========================
+   3. FORMULÁRIO
+========================== */
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ==========================
+   4. TÍTULOS
+========================== */
+
+.contact-form h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.contact-form > p {
+    color: #777;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+
+/* ==========================
+   5. CAMPOS
+========================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #271d13;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+/* ==========================
+   6. INTERAÇÃO DOS CAMPOS
+========================== */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #835f45;
+    box-shadow: 0 0 0 3px rgba(131, 95, 69, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaaaaa;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* ==========================
+   7. BOTÃO
+========================== */
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #271d13;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4e3928;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* ==========================
+   8. FEEDBACK
+========================== */
+
+#feedback {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ==========================
+   9. RESPONSIVIDADE
+========================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 16px;
+        align-items: flex-start;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-form h1 {
+        font-size: 25px;
+    }
+
+}
